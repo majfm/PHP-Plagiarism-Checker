@@ -30,7 +30,7 @@ class SubmissionIndexing
   /**
    * SubmissionRepository[] - Check inner properties for more details.
    */
-  public array $repositories;
+  public $repositories;
   /**
    * @param SubmissionRepository[] $repositories - Check inner properties of SubmissionRepository for more details.
    */

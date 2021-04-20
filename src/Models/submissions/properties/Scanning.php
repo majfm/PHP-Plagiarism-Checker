@@ -30,19 +30,19 @@ class SubmissionScanning
   /**
    * Compare your content with online sources.
    */
-  public ?bool $internet;
+  public $internet;
   /**
    * Check inner properties for more details.
    */
-  public ?SubmissionScanningExclude $exclude;
+  public $exclude;
   /**
    * SubmissionScanningRepository[] - Check inner properties of SubmissionScanningRepository for more details.
    */
-  public ?array $repositories;
+  public $repositories;
   /**
    * Check inner properties for more details.
    */
-  public ?SubmissionScanningCopyleaksDB $copyleaksDb;
+  public $copyleaksDb;
 
   /**
    *@param bool $internet Compare your content with online sources.

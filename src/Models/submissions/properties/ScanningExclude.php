@@ -33,7 +33,7 @@ class SubmissionScanningExclude
    *  * '*' Matches any, zero or more, characters.
    *  * '.' Matches a single (non whitespace) character
    */
-  public string $idPattern;
+  public $idPattern;
   /**
    * @param string $idPattern - Exclude your submissions from results if their id matches the supplied pattern. Matched submissions will be excluded from batch, internal database and repositories results. Supported pattern wildcards: '*' Matches any, zero or more, characters.  '.' Matches a single (non whitespace) character
    */

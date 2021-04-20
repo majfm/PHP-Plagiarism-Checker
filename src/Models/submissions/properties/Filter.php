@@ -30,27 +30,27 @@ class SubmissionFilter
   /**
    * Enable matching of exact words in the text.
    */
-  public bool $identicalEnabled;
+  public $identicalEnabled;
   /**
    * Enable matching of nearly identical words with small differences like slow becomes slowly.
    */
-  public bool $minorChangesEnabled;
+  public $minorChangesEnabled;
   /**
    * Enable matching of paraphrased content stating similar ideas with different words.
    */
-  public bool $relatedMeaningEnabled;
+  public $relatedMeaningEnabled;
   /**
    * Select results with at least minCopiedWords copied words.
    */
-  public ?int $minCopiedWords = null;
+  public $minCopiedWords = null;
   /**
    * Block explicit adult content from the scan results such as web pages containing inappropriate images and videos. SafeSearch is not 100% effective with all websites.
    */
-  public bool $safeSearch;
+  public $safeSearch;
   /**
    * string[] - list of domains to either include or exclude from the scan - depending on the value of domainsMode.
    */
-  public array $domains;
+  public $domains;
   /**
    * SubmissionFilterDomainsMode -
    * Include or Exclude the list of domains you specified under the domains property
@@ -59,7 +59,7 @@ class SubmissionFilter
    *
    * When Exclude is selected, Copyleaks will only find results outside of the properties.filters.domains list.
    */
-  public int $domainsMode;
+  public $domainsMode;
 
   /**
    *@param bool $identicalEnabled Enable matching of exact words in the text.

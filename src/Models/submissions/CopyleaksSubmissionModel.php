@@ -30,7 +30,7 @@ class CopyleaksSubmissionModel
   /**
    * Check inner properties for more details.
    */
-  public SubmissionProperties $properties;
+  public $properties;
   /**
    * @param SubmissionProperties $properties Check inner properties for more details.
    */

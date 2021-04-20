@@ -30,15 +30,15 @@ class CopyleaksDeleteRequestModel
   /**
    * {id:string}[] - The list of scans to delete
    */
-  public array $scans;
+  public $scans;
   /**
    * Delete all trace of the scan from Copyleaks server, including from internal database. A purged process will not be available as a result for previous scans.
    */
-  public bool $purge;
+  public $purge;
   /**
    * Allows you to register to a webhook that will be fired once the removal has been completed. Make sure that your endpoint is listening to a POST method (no body parameters were supplied).
    */
-  public string $completionWebhook;
+  public $completionWebhook;
   /**   
    * @param {id:string}[] $scans The list of scans to delete
    * @param Boolean $purge Delete all trace of the scan from Copyleaks server, including from internal database. A purged process will not be available as a result for previous scans.

@@ -31,12 +31,12 @@ class SubmissionScanningCopyleaksDB
    * When set to true: Copyleaks will also compare against content which was uploaded by YOU to the Copyleaks internal database.
    * If true, it will also index the scan in the Copyleaks internal database.
    */
-  public bool $includeMySubmissions;
+  public $includeMySubmissions;
   /**
    * When set to true: Copyleaks will also compare against content which was uploaded by OTHERS to the Copyleaks internal database.
    * If true, it will also index the scan in the Copyleaks internal database.
    */
-  public bool $includeOthersSubmissions;
+  public $includeOthersSubmissions;
   /**
    * @param bool $includeMySubmissions When set to true: Copyleaks will also compare against content which was uploaded by YOU to the Copyleaks internal database. If true, it will also index the scan in the Copyleaks internal database.
    * @param bool $includeOthersSubmissions  When set to true: Copyleaks will also compare against content which was uploaded by OTHERS to the Copyleaks internal database. If true, it will also index the scan in the Copyleaks internal database.

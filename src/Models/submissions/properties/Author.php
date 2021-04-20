@@ -32,7 +32,7 @@ class SubmissionAuthor
    * 
    * Using this feature Copyleaks can detect the author's writing patterns and get better results.
    */
-  public string $id;
+  public $id;
   /**
    * @param string $id A unique identifier that represents the author of the content. Make sure to use the same ID for the same author. Using this feature Copyleaks can detect the author's writing patterns and get better results.
    */

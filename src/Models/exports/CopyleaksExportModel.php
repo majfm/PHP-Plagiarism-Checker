@@ -30,27 +30,27 @@ class CopyleaksExportModel
   /**
    * This webhook event is triggered once the export is completed.
    */
-  public string $completionWebhook;
+  public $completionWebhook;
   /**
    * An array of results to be exported. The equivalent of downloading results manually.
    */
-  public array $results;
+  public $results;
   /**
    * $crawledVersion Download the crawled version of the submitted text. The equivalent of downloading crawled version manually.
    */
-  public ExportCrawledVersion $crawledVersion;
+  public $crawledVersion;
   /**
    * How many retries to send before giving up. Using high value (12) may lead to a longer time until the completionWebhook being executed. A low value (1) may lead to errors while your service is temporary having problems.
    */
-  public ?int $maxRetries;
+  public $maxRetries;
   /**
    * Add a custom developer payload that will then be provided on the Export-Completed webhook. https://api.copyleaks.com/documentation/v3/webhooks/export-completed
    */
-  public ?string $developerPayload;
+  public $developerPayload;
   /**
    * Download the PDF report. Allowed only when `properties.pdf.create` was set to true on the scan submittion.
    */
-  public ?ExportPdfReport $pdfReport;
+  public $pdfReport;
   /**
    * @param string $completionWebhook This webhook event is triggered once the export is completed.
    * @param ExportResults $results An array of results to be exported. The equivalent of downloading results manually.

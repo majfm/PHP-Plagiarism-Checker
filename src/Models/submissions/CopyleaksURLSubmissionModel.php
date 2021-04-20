@@ -30,11 +30,11 @@ class CopyleaksURLSubmissionModel extends CopyleaksSubmissionModel
   /**
    * The url to be scanned
    */
-  public string $url;
+  public $url;
   /**
    * Check inner properties for more details.
    */
-  public SubmissionProperties $properties;
+  public $properties;
   /**
    * @param string $url The url to be scanned
    * @param SubmissionProperties $properties Check inner properties for more details.

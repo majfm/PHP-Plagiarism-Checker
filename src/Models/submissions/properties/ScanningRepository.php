@@ -30,11 +30,11 @@ class SubmissionScanningRepository extends SubmissionRepository
   /**
    * Compare the scanned document against MY submittions in the repository.
    */
-  public bool $includeMySubmissions;
+  public $includeMySubmissions;
   /**
    * Compare the scanned document against OTHER users submittions in the repository.
    */
-  public bool $includeOthersSubmissions;
+  public $includeOthersSubmissions;
   /**
    * @param bool $includeMySubmissions Compare the scanned document against MY submittions in the repository.
    * @param bool $includeOthersSubmissions Compare the scanned document against OTHER users submittions in the repository.

@@ -38,7 +38,7 @@ class SubmissionSensitiveData
    *  * Spain driver's license number
    *  * Germany driver's license number
    */
-  public ?bool $driversLicense;
+  public $driversLicense;
   /**
    * Mask credentials from the scanned document with # characters. Available for users on a plan for 2500 pages or more.
    * * Supported Types:
@@ -52,7 +52,7 @@ class SubmissionSensitiveData
    *  * Encryption key
    *  * Password
    */
-  public ?bool $credentials;
+  public $credentials;
   /**
    * Mask passports from the scanned document with # characters. Available for users on a plan for 2500 pages or more.
    * * Supported Types:
@@ -74,7 +74,7 @@ class SubmissionSensitiveData
    *  * Singapore passport number
    *  * Taiwan passport number
    */
-  public ?bool $passport;
+  public $passport;
   /**
    * Mask network identifiers from the scanned document with # characters. Available for users on a plan for 2500 pages or more.
    * * Supported Types:
@@ -82,23 +82,23 @@ class SubmissionSensitiveData
    *  * Local MAC address
    *  * MAC address
    */
-  public ?bool $network;
+  public $network;
   /**
    * Mask url from the scanned document with # characters. Available for users on a plan for 2500 pages or more.
    */
-  public ?bool $url;
+  public $url;
   /**
    * Mask email addresses from the scanned document with # characters. Available for users on a plan for 2500 pages or more.
    */
-  public ?bool $emailAddress;
+  public $emailAddress;
   /**
    * Mask credit card numbers and credit card track numbers from the scanned document with # characters. Available for users on a plan for 2500 pages or more.
    */
-  public ?bool $creditCard;
+  public $creditCard;
   /**
    * Mask phone numbers from the scanned document with # characters. Available for users on a plan for 2500 pages or more.
    */
-  public ?bool $phoneNumber;
+  public $phoneNumber;
   /**
    *@param bool $driversLicense - Mask driver's license numbers from the scanned document with # characters. Available for users on a plan for 2500 pages or more.
    *@param bool $credentials - Mask credentials from the scanned document with # characters. Available for users on a plan for 2500 pages or more.

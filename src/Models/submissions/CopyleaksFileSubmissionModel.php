@@ -30,15 +30,15 @@ class CopyleaksFileSubmissionModel extends CopyleaksSubmissionModel
   /**
    * A base64 data string of a file. If you would like to scan plain text, encode it as base64 and submit it.
    */
-  public string $base64;
+  public $base64;
   /**
    * The name of the file as it will appear in the Copyleaks scan report Make sure to include the right extension for your filetype.
    */
-  public string $filename;
+  public $filename;
   /**
    * Check inner properties for more details.
    */
-  public SubmissionProperties $properties;
+  public $properties;
   /**
    * @param string $base64 A base64 data string of a file. If you would like to scan plain text, encode it as base64 and submit it.
    * @param string $filename The name of the file as it will appear in the Copyleaks scan report Make sure to include the right extension for your filetype.

@@ -31,21 +31,21 @@ class ExportResults
    * Result identification to be downloaded. You get these identifications from the completed webhook.
    * https://api.copyleaks.com/documentation/v3/webhooks/completed
    */
-  public string $id;
+  public $id;
   /**
    * The HTTP url to upload the data.
    */
-  public string $endpoint;
+  public $endpoint;
   /**
    * The HTTP verb (also called "HTTP Methods") to upload the data to your specified endpoint.
    */
-  public string $verb;
+  public $verb;
   /**
    * List of headers to be submitted with the upload request. You may use this field to provide additional request headers, such as "Authorization" header.
    *
    * Example: [["header-key1", "header-value1"], ["header-key2", "header-value2"]]
    */
-  public ?array $headers;
+  public $headers;
   /**
    * @param string $id Result identification to be downloaded. You get these identifications from the completed webhook. https://api.copyleaks.com/documentation/v3/webhooks/completed
    * @param string $endpoint The HTTP url to upload the data.

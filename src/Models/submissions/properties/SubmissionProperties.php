@@ -30,16 +30,16 @@ class SubmissionProperties
   /**
    * Check inner properties for more details.
    */
-  public SubmissionWebhooks $webhooks;
+  public $webhooks;
   /**
    * By default, Copyleaks will present the report in text format. If set to true, Copyleaks will also include html format.
    */
-  public ?bool $includeHtml;
+  public $includeHtml;
   /**
    * Add custom developer payload that will then be provided on the webhooks.
    * https://api.copyleaks.com/documentation/v3/webhooks
    */
-  public ?string $developerPayload;
+  public $developerPayload;
   /**
    * You can test the integration with the Copyleaks API for free using the sandbox mode.
    *
@@ -47,23 +47,23 @@ class SubmissionProperties
    *
    * Turn off this feature on production environment.
    */
-  public ?bool $sandbox;
+  public $sandbox;
   /**
    * Specify the maximum life span of a scan in hours on the Copyleaks servers.
    *
    * When expired, the scan will be deleted and will no longer be accessible.
    */
-  public ?int $expiration;
+  public $expiration;
   /**
    * You can control the level of plagiarism sensitivity that will be identified according to the speed of the scan.
    * If you prefer a faster scan with the results that contains the highest amount of plagiarism choose 1,
    * and if a slower, more comprehensive scan, that will also detect the smallest instances choose 5.
    */
-  public ?int $sensitivityLevel;
+  public $sensitivityLevel;
   /**
    * When set to true the submitted document will be checked for cheating. If a cheating will be detected, a scan alert will be added to the completed webhook.
    */
-  public ?bool $cheatDetection;
+  public $cheatDetection;
   /**
    * SubmissionActions - Types of content submission actions.
    *
@@ -72,35 +72,35 @@ class SubmissionProperties
    *  * Check Credits: Check how many credits will be used for this scan.
    *  * Index Only: Only index the file in the Copyleaks internal database. No credits will be used.
    */
-  public ?int $action;
+  public $action;
   /**
    * Check inner properties for more details.
    */
-  public ?SubmissionAuthor $author;
+  public $author;
   /**
    * Check inner properties for more details.
    */
-  public ?SubmissionFilter $filters;
+  public $filters;
   /**
    * Check inner properties for more details.
    */
-  public ?SubmissionScanning $scanning;
+  public $scanning;
   /**
    * Check inner properties for more details.
    */
-  public ?SubmissionIndexing $indexing;
+  public $indexing;
   /**
    * Check inner properties for more details.
    */
-  public ?SubmissionExclude $exclude;
+  public $exclude;
   /**
    * Check inner properties for more details.
    */
-  public ?SubmissionPDF $pdf;
+  public $pdf;
   /**
    * Check inner properties for more details.
    */
-  public ?SubmissionSensitiveData $sensitiveDataProtection;
+  public $sensitiveDataProtection;
 
   /**
    *@param SubmissionWebhooks $webhooks - Check inner properties for more details.

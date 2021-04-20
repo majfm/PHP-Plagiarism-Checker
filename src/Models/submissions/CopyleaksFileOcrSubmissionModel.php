@@ -30,7 +30,7 @@ class CopyleaksFileOcrSubmissionModel extends CopyleaksFileSubmissionModel
   /**
    * The language code of your content. The selected language should be on the OCR supported languages list. https://api.copyleaks.com/documentation/v3/specifications/ocr-languages
    */
-  public string $langCode;
+  public $langCode;
   /**
    * @param string $langCode The language code of your content. The selected language should be on the OCR supported languages list. https://api.copyleaks.com/documentation/v3/specifications/ocr-languages
    * @param string $base64 A base64 data string of a file. If you would like to scan plain text, encode it as base64 and submit it.

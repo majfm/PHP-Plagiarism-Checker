@@ -31,19 +31,19 @@ class SubmissionPDF
    * Add a request to generate a customizable export of the scan report, in a pdf format.
    * Set to true in order to generate a pdf report for this scan.
    */
-  public bool $create;
+  public $create;
   /**
    * Customize the title for the PDF report.
    */
-  public string $title;
+  public $title;
   /**
    * Customize the logo image in the PDF report.
    */
-  public string $largeLogo;
+  public $largeLogo;
   /**
    * When set to true the text in the report will be aligned from right to left.
    */
-  public bool $rtl;
+  public $rtl;
   /**
    *@param bool $create Add a request to generate a customizable export of the scan report, in a pdf format. Set to true in order to generate a pdf report for this scan.
    *@param string $title Customize the title for the PDF report.

@@ -30,7 +30,7 @@ class SubmissionRepository
   /**
    * Id of a repository to add the scanned document to.
    */
-  public string $id;
+  public $id;
   public function __construct(string $id)
   {
     $this->id = $id;

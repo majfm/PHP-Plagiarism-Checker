@@ -30,11 +30,11 @@ class CopyleaksStartRequestModel
   /**
    * A list of scans that you submitted for a check-credits scan and that you would like to submit for a full scan.
    */
-  public array $trigger;
+  public $trigger;
   /**
    * When set to ignore (ignore = 1) the trigger scans will start running even if some of them are in error mode, when set to cancel (cancel = 0) the request will be cancelled if any error was found.
    */
-  public int $errorHandling;
+  public $errorHandling;
   /** 
    * @param string[] $trigger A list of scans that you submitted for a check-credits scan and that you would like to submit for a full scan.
    * @param CopyleaksStartErrorHandlings $errorHandling When set to ignore (ignore = 1) the trigger scans will start running even if some of them are in error mode, when set to cancel (cancel = 0) the request will be cancelled if any error was found.

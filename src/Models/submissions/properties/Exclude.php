@@ -30,23 +30,23 @@ class SubmissionExclude
   /**
    * Exclude quoted text from the scan.
    */
-  public bool $quotes;
+  public $quotes;
   /**
    * Exclude referenced text from the scan.
    */
-  public bool $references;
+  public $references;
   /**
    * Exclude table of contents from the scan.
    */
-  public bool $tableOfContents;
+  public $tableOfContents;
   /**
    * Exclude titles from the scan.
    */
-  public bool $titles;
+  public $titles;
   /**
    * When the scanned document is an HTML document, exclude irrelevant text that appears across the site like the website footer or header.
    */
-  public bool $htmlTemplate;
+  public $htmlTemplate;
 
   /**
    * @param bool $quotes Exclude quoted text from the scan. 

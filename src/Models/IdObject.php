@@ -27,7 +27,7 @@ namespace Copyleaks;
 
 class IdObject
 {
-  public string $id;
+  public $id;
   public function __construct(string $id)
   {
     $this->id = $id;
